@@ -71,8 +71,15 @@ Object.defineProperty(window, 'ysmm', {
     <meta property="og:title" content="Cursebox">
     <meta property="og:type" content="">
     <meta property="og:url" content="">
-    <meta property="og:image" content="https://github.com/cursebox/Cursebox/blob/main/Cursebox%20PAGE_files/header-logo-16041232752.gif">
+    <meta property="og:image" content="">
     <meta property="og:description" content="Cursebox">
+
+function my_custom_function_name() {
+  $app_id = 966242223397117;
+  $tag = '<meta property="fb:app_id" content="%d" />';
+  echo sprintf($tag, $num);
+}
+add_action( 'wp_head', 'my_custom_function_name' );
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">

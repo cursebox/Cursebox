@@ -54,6 +54,33 @@ Object.defineProperty(window, 'ysmm', {
         padding-top: 56.25%
       }
     </style>
+	
+	<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "201525746535751");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Meta tags -->
     
@@ -65,7 +92,7 @@ Object.defineProperty(window, 'ysmm', {
     <!-- Page Info -->
     <title>Cursebox</title>
             <meta name="description" content="Cursebox">
-        <link rel="canonical" href="https://cursebox.post.pro/">
+        <link rel="canonical" href="https://cursebox.github.io/Cursebox/">
 
 <meta name="google-site-verification" content="LWZyvy5rkadzaBVynAn5e2H7yAwJDN_y12mxUEscpJE" />
 
@@ -2157,31 +2184,6 @@ portfolio-home" data-addedclasses="with-preloader" style="zoom: 1;">
     profitwell('auth_token', 'c2fbc293994166ab31d465e951acd58b');
         </script>
 
-<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "201525746535751");
-      chatbox.setAttribute("attribution", "biz_inbox");
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v10.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 </body></html>

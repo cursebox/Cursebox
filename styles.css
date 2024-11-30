@@ -118,7 +118,10 @@ body {
 
 
 
-
+@media screen and (max-width: 500px)  {
+    .form-groupBlogg {width: 100%;}
+    .form-group {width:100%;}
+}
 
 
 
@@ -135,6 +138,24 @@ body {
     border-color: rgba(255, 255, 255, 0.10);
     padding: 0.5rem 0rem;
    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body-wrapper {
+  @media (min-width: 768px) {
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  height: 10rem;
+  padding: 2rem;
+  background-color: aqua;
 }
 
 .active{

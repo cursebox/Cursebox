@@ -2,9 +2,7 @@
 
 JavaScript Document
 
-TemplateMo 615 Amber Folio
 
-https://templatemo.com/tm-615-amber-folio
 
 */
 
